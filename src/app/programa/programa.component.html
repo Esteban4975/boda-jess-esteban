@@ -1,0 +1,25 @@
+<div class="card mt-3">
+    <div class="block bg-white font-bold text-center p-4 border-round mb-3" >
+        <p>Programa</p>
+        
+        <p-timeline [value]="events" >
+
+            <ng-template pTemplate="marker" let-event>
+                <span class="custom-marker p-shadow-2">
+                    <i [ngClass]="event.icon"></i>
+                </span>
+            </ng-template>
+
+            <ng-template pTemplate="content" let-event>
+                <small class="p-text-secondary" [ngStyle]="{color:'var(--gray-700)'}">{{event.date}}</small>
+            </ng-template>
+
+            <ng-template pTemplate="opposite" let-event>
+                <span [ngStyle]="{color:'var(--gray-900)'}">{{event.status}}</span>
+            </ng-template>
+
+        </p-timeline>
+
+    </div>
+</div>
+

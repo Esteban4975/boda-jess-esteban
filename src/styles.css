@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    padding: 2rem;
+    background-color: #E3CAC3;
+}
+
+.black{
+    color: black;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.right-aligned-header > .mat-content {
+    justify-content: space-between;
+ }
+
+ .mat-content > mat-panel-title, .mat-content > mat-panel-description {
+    flex: 0 0 auto;
+ }
+
+ .form{
+     width: 100%;
+ }
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .mat-radio-button {
+    margin-left: 16px;
+    font-size: large;
+  }
